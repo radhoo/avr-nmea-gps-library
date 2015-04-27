@@ -3,4 +3,4 @@ Recently I have developed a GPS NMEA Parser for an embedded system using the ATM
 
 Project details available here: http://www.pocketmagic.net/?p=3821
 
-Read the wiki on: 
+Read the wiki on: https://github.com/radhoo/avr-nmea-gps-library/wiki
