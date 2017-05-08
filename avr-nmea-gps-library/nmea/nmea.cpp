@@ -178,7 +178,7 @@ void NMEA::parsedata() {
 	 *  6    = E or W
 	 *  7    = Speed over ground in knots
 	 *  8    = Track made good in degrees True, Bearing This indicates the direction that the device is currently moving in, 
-	 *       from 0 to 360, measured in ìazimuthî.
+	 *       from 0 to 360, measured in ‚Äúazimuth‚Äù.
 	 *  9    = UT date
 	 *  10   = Magnetic variation degrees (Easterly var. subtracts from true course)
 	 *  11   = E or W
@@ -212,7 +212,7 @@ void NMEA::parsedata() {
 		//parse speed
 		// The knot (pronounced not) is a unit of speed equal to one nautical mile (1.852 km) per hour
 		res_fSpeed = string2float(tmp_words[7]);
-		res_fSpeed /= 1.852; // convert to km/h
+		res_fSpeed *= 1.852; // convert to km/h
 		// parse bearing
 		res_fBearing = string2float(tmp_words[8]);
 		// parse UTC date
